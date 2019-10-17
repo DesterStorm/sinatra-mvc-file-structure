@@ -1,15 +1,13 @@
 class Dog 
   
-  get '/name' do 
-    
+  attr_accessor :name, :breed, :age
+  
+  def initialize 
+    @all = []
   end
   
-  get '/breed' do 
-    
-  end
-  
-  get '/age' do 
-    
-  end
+  def self.all
+    @all
+  end 
   
 end
